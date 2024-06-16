@@ -1,9 +1,9 @@
-const int analogPin = A0;  // Analog pin A0 to read the voltage
-const int ledPin = 13;     // Digital pin 13 for LED
+const int analogPin = A0;  //  read the voltage
+const int ledPin = 13;     
 const float R1 = 10000.0;  // Value of R1 in ohms
 const float R2 = 2200.0;   // Value of R2 in ohms
-const float referenceVoltage = 5.0; // Reference voltage of Arduino (5V)
-const float lowBatteryThreshold = 10.5; // Low battery voltage threshold
+const float referenceVoltage = 5.0; // Reference voltage
+const float lowBatteryThreshold = 10.5; // voltage threshold
 
 void setup() {
   pinMode(ledPin, OUTPUT);
@@ -26,5 +26,5 @@ void loop() {
     
   }
   
-  delay(1000); // Check every second
+  delay(1000); 
 }
